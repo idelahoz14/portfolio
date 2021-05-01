@@ -1,5 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -15,13 +22,97 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-left: 5rem;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.App-navbar {
+  padding-left: 30rem;
+}
+
+.App-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.App-nav .App-navitem {
+  padding-left: 1rem;
+  letter-spacing: 0.04rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.App-nav .App.navlink {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  transition: 0.5s;
+  color: #FF4141;
+}
+
+.button {
+  color: #282c34;
+  font-size: 1.3rem;
+  border: 2px solid #282c34;
+  padding: 0.5rem;
+}
+
+.button:hover {
+  transition: 0.5s;
+  color: aliceblue;
+  background-color: #282c34;
+}
+
+.section-title {
+  padding-top: 5rem;
+  font-size: 3.5rem;
+}
+
+.section-tagline {
+  color: #FF4141;
+  font-size: 1.0rem;
+  margin-top: -2.5rem;
+  font-weight: bold;
+}
+
+.section-body .col-1{
+  font-weight: bold;
+  padding-left: 15rem;
+}
+
+.section-footer {
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.section-about-us {
+  background-color: #61dafb;
+  height: 12cm;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.App-footer {
+  color: aliceblue;
+  background-color: #FF4141;
+  margin-top: 11.92cm;
+  height: 3.5rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 3.5px;
 }
 
 .App-link {
